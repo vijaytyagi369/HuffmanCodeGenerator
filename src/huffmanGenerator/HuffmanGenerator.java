@@ -24,7 +24,15 @@ public class HuffmanGenerator {
     }
 
     public String convertNormalStringToHuffmanString() {
+        String[] huffman=new String[]{"1010","100000","00000","10110","010","110011","1000010","0001","01110","1100001010","11000011","10111","110010","01111","1001","100001",
+                "1100001001","0010","0011","1101","00001","1100000","110001","1100001000","100011","1100001010"};
+        StringBuilder hf=new StringBuilder("");
+        for (int i = 0; i <userInputStringInLowerCase.length() ; i++) {
+            hf=hf.append(huffman[userInputStringInLowerCase.charAt(i)-97]);
+        }
+        System.out.println("Huffman String:- "+hf);
 
-        return "";
+
+        return hf.toString();
     }
 }
