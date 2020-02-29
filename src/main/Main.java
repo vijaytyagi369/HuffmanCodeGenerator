@@ -25,6 +25,8 @@ public class Main {
         int lengthOfHuffmanString = huffmanString.length();
         System.out.println("The binary string has " + lengthOfBinaryString + " characters.");
         System.out.println("The huffman string has " + lengthOfHuffmanString + " characters.");
+        System.out.printf("Compression Ratio (Huffman/Binary): %.2f %%",((double)lengthOfHuffmanString / (double) lengthOfBinaryString));
+
         scanner.close();
     }
 }
